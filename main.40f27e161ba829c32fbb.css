@@ -17,3 +17,117 @@ p {
   unicode-bidi: isolate;
   text-align: center; /* 👈 Esta línea centra el texto */
 }
+
+.networking-project {
+  align-self: center;
+  align-items: center;
+  gap: 4rem;
+  width: min(130rem, calc(100% - 4rem));
+  margin: 0 auto 14rem;
+}
+
+.networking-project .project__image-container {
+  flex: 1 1 50%;
+  width: auto;
+  height: auto;
+  background-color: #3216bb;
+  cursor: default;
+}
+
+.networking-project .project__image-image {
+  width: 85%;
+}
+
+.networking-project .project__image-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.networking-project .project__info {
+  position: static;
+  flex: 1 1 50%;
+  width: auto;
+  margin: 0;
+  padding: 1rem;
+  background-color: transparent;
+  text-align: center;
+}
+
+.code-logos {
+  width: min(38rem, calc(100% - 4rem));
+  margin: 0 auto;
+}
+
+.code-logos .skills__row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.code-logos .skills__item {
+  width: 100%;
+  height: 12rem;
+  margin: 0;
+  opacity: 1;
+}
+
+.code-logos .skills__item img {
+  width: auto;
+  height: auto;
+  max-width: 85%;
+  max-height: 60%;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .networking-project {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .networking-project .project__image-container,
+  .networking-project .project__info {
+    width: 100%;
+  }
+}
+
+.network-logos {
+  width: min(56rem, calc(100% - 4rem));
+  margin: 0 auto;
+}
+
+.network-logos .skills__row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.network-logos .skills__item {
+  width: 100%;
+  height: 12rem;
+  margin: 0;
+  opacity: 1;
+}
+
+.network-logos .skills__item img {
+  width: auto;
+  height: auto;
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+}
+
+.contact {
+  margin-top: 10rem;
+}
+
+.heading-cta:before,
+.heading-cta:after {
+  right: -2px;
+  bottom: -2px;
+  width: auto;
+  height: auto;
+}
